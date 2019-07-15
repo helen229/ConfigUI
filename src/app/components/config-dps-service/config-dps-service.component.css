@@ -1,0 +1,49 @@
+.example-card {
+    padding: 20px;
+    width: 80%;
+    max-width: 900px;
+}
+.header {
+    color:  rgb(2, 112, 202);
+    text-align: center;
+    margin: 15px;
+}
+.subheader {
+    text-align: left;
+}
+.example-form {
+    min-width: 100px;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+.example-button-row button,
+.example-button-row a {
+  margin-right: 10px;
+}
+  
+.mat-list-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dps-service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 3%;
+}
+
+.mat-expansion-panel {
+    min-width: 150px;
+    width: 500px;
+  }

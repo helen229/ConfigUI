@@ -1,0 +1,49 @@
+.choose-service p {
+    /* font-family:  */
+    font-size: 14px;
+  }
+
+.choose-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 90vh;
+}
+
+.choose-service a {
+margin-right: 8px;
+}
+
+.example-button-row button,
+.example-button-row a {
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration:none;
+  border: 5px;
+  outline: 5px;
+  margin-right: 8px;
+}
+
+.example-radio-group {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 15px;
+  }
+  
+.example-radio-button {
+  margin: 5px;
+}
+
+.example-card {
+  max-width: 400px;
+}
+  
+.example-header-image {
+  background-image: url('https://www.rbcroyalbank.com/mortgages/_assets-custom/images/rbc-og.jpg');
+  background-size: cover;
+}

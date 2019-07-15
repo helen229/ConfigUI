@@ -1,0 +1,79 @@
+<div class="dps-service">
+  <mat-card class="example-card">
+      <mat-list class="mat-list-style">
+          <h2 class="header">DPS Config Service </h2>
+          <h1 mat-subheader >Channnel List</h1>
+          <mat-accordion>
+              <mat-expansion-panel class="mat-expansion-panel">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Channnel List
+                  </mat-panel-title>
+                  <mat-panel-description>
+                    Add your new Config here
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+                <form class="example-form" *ngFor="let channelList of channelLists">
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Channel Name: " value={{channelList.channelName}}>
+                    </mat-form-field>
+                  
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="App Code: " value={{channelList.appCode}}>
+                    </mat-form-field>
+                
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Org: " value={{channelList.org}}>
+                    </mat-form-field>
+                
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Sp Name" value={{channelList.spName}}>
+                    </mat-form-field>
+                
+                    <mat-form-field class="example-full-width">
+                      <input matInput placeholder="Header Value: " value={{channelList.headerValue}}>
+                    </mat-form-field>
+                    
+                    <br />
+                </form>
+              </mat-expansion-panel>
+            </mat-accordion>
+          <!-- <mat-list-item *ngFor="let channelList of channelLists">
+            <mat-icon mat-list-icon>folder</mat-icon> -->
+            <!-- <h4 mat-line>{{channelList.channelName}}</h4>
+            <p mat-line> {{channelList.appCode}} </p>
+          </mat-list-item> -->
+          <!-- <app-channel-list></app-channel-list>
+          <app-channel-list></app-channel-list> -->
+          <mat-divider></mat-divider>
+          <h2 mat-subheader>Filter List</h2>
+          <form class="example-form" *ngFor="let channelList of channelLists">
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Channel Name: " value={{channelList.channelName}}>
+              </mat-form-field>
+            
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="App Code: " value={{channelList.appCode}}>
+              </mat-form-field>
+          
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Org: " value={{channelList.org}}>
+              </mat-form-field>
+          
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Sp Name" value={{channelList.spName}}>
+              </mat-form-field>
+          
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Header Value: " value={{channelList.headerValue}}>
+              </mat-form-field>
+          </form>
+          <div class="example-button-row">
+            <button mat-raised-button>Commit</button>
+            <button mat-raised-button>Rebase</button>
+            <button mat-raised-button color="warn">Pull Request</button>
+          </div>
+      </mat-list>
+  </mat-card>
+</div>
+
