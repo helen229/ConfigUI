@@ -22,12 +22,15 @@
             Choose the Service you want to config: 
         </p>
         <mat-radio-group  class="example-radio-group" >
+          <div style="  display:flex;
+          flex-direction: column;">
             <mat-radio-button class="example-radio-button" name="service" (click)="onChoose('DRS')" value="DRS" checked>
               Document Retrieval Service
             </mat-radio-button>
             <mat-radio-button class="example-radio-button" name="service" (click)="onChoose('DPS')" value="DPS">
               Document Preference Service
             </mat-radio-button>
+          </div>
         </mat-radio-group>  
       </mat-card-content>
       <mat-card-actions>

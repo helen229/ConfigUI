@@ -22,9 +22,9 @@
     margin: 1%;
   }
   
-  .example-full-width {
-    width: 100%;
-  }
+.example-full-width {
+  width: 100%;
+}
 .example-button-row button,
 .example-button-row a {
   margin-right: 10px;
@@ -42,7 +42,10 @@
     text-align: center;
     margin: 3%;
 }
-
+.button-wrapper {
+  display:flex;
+  flex-direction: column;
+}
 .mat-expansion-panel {
     min-width: 150px;
     width: 500px;
